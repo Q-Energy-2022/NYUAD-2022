@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#qudra" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -181,10 +186,77 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         About
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-from-source" class="md-nav__link">
+    Building from source
+  </a>
+  
+    <nav class="md-nav" aria-label="Building from source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-for-devs" class="md-nav__link">
+    Installation for Devs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-documentation-locally" class="md-nav__link">
+    Building documentation locally
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    Acknowledgements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -323,6 +395,73 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-from-source" class="md-nav__link">
+    Building from source
+  </a>
+  
+    <nav class="md-nav" aria-label="Building from source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-for-devs" class="md-nav__link">
+    Installation for Devs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-documentation-locally" class="md-nav__link">
+    Building documentation locally
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    Acknowledgements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -330,9 +469,39 @@
                 
 
 
-  <h1>About</h1>
-
-
+<h1 id="qudra">qudra</h1>
+<p><em>Quantum Energy Management</em></p>
+<h2 id="installation">Installation</h2>
+<p><em>Conda users, please make sure to <code>conda install pip</code> before running any pip installation if you want to install <code>qudra</code> into your conda environment.</em></p>
+<p><code>qudra</code> is published on PyPI. So, to install, simply run:</p>
+<pre><code class="language-bash">pip install qudra
+</code></pre>
+<p>If you also want to download the dependencies needed to run optional tutorials, please use <code>pip install qudra[dev]</code> or <code>pip install 'qudra[dev]'</code> (for <code>zsh</code> users).</p>
+<p>To check if the installation was successful, run:</p>
+<pre><code class="language-python">&gt;&gt;&gt; import qudra
+</code></pre>
+<h2 id="building-from-source">Building from source</h2>
+<p>To build <code>qudra</code> from source, pip install using:</p>
+<pre><code class="language-bash">git clone https://github.com/Q-Energy-2022/NYUAD-2022.git
+cd qudra
+pip install --upgrade .
+</code></pre>
+<p>If you also want to download the dependencies needed to run optional tutorials, please use <code>pip install --upgrade .[dev]</code> or <code>pip install --upgrade '.[dev]'</code> (for <code>zsh</code> users).</p>
+<h4 id="installation-for-devs">Installation for Devs</h4>
+<p>If you intend to contribute to this project, please install <code>qudra</code> in editable mode as follows:</p>
+<pre><code class="language-bash">git clone https://github.com/Q-Energy-2022/NYUAD-2022.git
+cd qudra
+pip install -e .[dev]
+</code></pre>
+<p>Please use <code>pip install -e '.[dev]'</code> if you are a <code>zsh</code> user.</p>
+<h4 id="building-documentation-locally">Building documentation locally</h4>
+<p>Set yourself up to use the <code>[dev]</code> dependencies. Then, from the command line run:</p>
+<pre><code class="language-bash">mkdocs build
+</code></pre>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p><strong>Core Devs:</strong> <a href="https://github.com/AsilQ">Asil Qraini</a>, <a href="https://github.com/fo-ui">Fouad Afiouni</a>, <a href="https://github.com/gargi2718">Gargi Chandrakar</a>, <a href="https://github.com/nursei7">Nurgazy Seidaliev</a>, <a href="https://github.com/saharbenrached">Sahar Ben Rached</a>, <a href="https://github.com/salemalhaddad">Salem Al Haddad</a>, <a href="https://github.com/SarthakMalla1154">Sarthak Prasad Malla</a></p>
+<p><strong>Mentors:</strong> <a href="https://github.com/akashkthkr">Akash Kant</a>, <a href="https://github.com/Phionx">Shantanu Jha</a></p>
+<p>This project was created at the <a href="https://nyuad.nyu.edu/en/events/2022/march/nyuad-hackathon-event.html">2022 NYUAD Hackathon</a> for Social Good in the Arab World: Focusing on Quantum Computing (QC). </p>
 
               
             </article>
