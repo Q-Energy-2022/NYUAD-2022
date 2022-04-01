@@ -218,6 +218,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#motivation" class="md-nav__link">
+    Motivation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#installation" class="md-nav__link">
     Installation
   </a>
@@ -343,7 +350,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="reference/qudra/test/">test</a>
+          <a href="reference/qudra/optimizers/">optimizers</a>
           
             <label for="__nav_2_1_1">
               <span class="md-nav__icon md-icon"></span>
@@ -351,10 +358,10 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="test" data-md-level="3">
+      <nav class="md-nav" aria-label="optimizers" data-md-level="3">
         <label class="md-nav__title" for="__nav_2_1_1">
           <span class="md-nav__icon md-icon"></span>
-          test
+          optimizers
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -364,8 +371,8 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/qudra/test/test_file/" class="md-nav__link">
-        test_file
+      <a href="reference/qudra/optimizers/distributed_energy/" class="md-nav__link">
+        distributed_energy
       </a>
     </li>
   
@@ -417,6 +424,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#motivation" class="md-nav__link">
+    Motivation
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#installation" class="md-nav__link">
@@ -475,7 +489,16 @@
 
 <h1 id="qudra">qudra</h1>
 <p><em>Quantum Energy Management</em></p>
+<p><a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/github/license/Q-Energy-2022/qudra.svg?style=popout-square" /></a>
+<a href="https://github.com/Q-Energy-2022/qudra/releases"><img alt="" src="https://img.shields.io/github/release/Q-Energy-2022/qudra.svg?style=popout-square" /></a>
+<a href="https://pypi.org/project/qudra/"><img alt="" src="https://img.shields.io/pypi/dm/qudra.svg?style=popout-square" /></a></p>
+<h2 id="motivation">Motivation</h2>
+<p>Leveraging quantum advantage to distributed grids for energy security and sustainability.</p>
+<p><em>Please check out these slides for more <a href="https://www.canva.com/design/DAE8pdmu5A0/F-bEPUubsNa9QMclkktCsg/view">information</a>.</em></p>
 <h2 id="installation">Installation</h2>
+<p>Our team's contribution is supposed to go into the <code>qudra</code> folder. So move there</p>
+<pre><code class="language-console">cd NYUAD-2022/qudra
+</code></pre>
 <p><em>Conda users, please make sure to <code>conda install pip</code> before running any pip installation if you want to install <code>qudra</code> into your conda environment.</em></p>
 <p><code>qudra</code> is published on PyPI. So, to install, simply run:</p>
 <pre><code class="language-bash">pip install qudra
@@ -497,7 +520,9 @@ pip install --upgrade .
 cd qudra
 pip install -e .[dev]
 </code></pre>
-<p>Please use <code>pip install -e '.[dev]'</code> if you are a <code>zsh</code> user.</p>
+<p>python3 -m venv venv
+. venv/bin/activate
+Please use <code>pip install -e '.[dev]'</code> if you are a <code>zsh</code> user.</p>
 <h4 id="building-documentation-locally">Building documentation locally</h4>
 <p>Set yourself up to use the <code>[dev]</code> dependencies. Then, from the command line run:</p>
 <pre><code class="language-bash">mkdocs build
