@@ -15,11 +15,6 @@ Leveraging quantum advantage to optimize distributed grids for energy security a
 *Please check out these slides for more [information](https://www.canva.com/design/DAE8k9ZTusE/yADryUs2shHHs5LKuvO9pQ/view).*
 ## Installation
 
-Our team's contribution is supposed to go into the `qudra` folder. So move there
-```console
-cd qudra
-```
-
 *Conda users, please make sure to `conda install pip` before running any pip installation if you want to install `qudra` into your conda environment.*
 
 `qudra` is published on PyPI. So, to install, simply run:
