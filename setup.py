@@ -52,7 +52,7 @@ setup(
     description="Quantum Energy Management",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/Q-Energy-2022/NYUAD-2022",
+    url="https://github.com/qcenergy/qudra",
     author="Asil Qraini, Fouad Afiouni, Gargi Chandrakar, Nurgazy Seidaliev, Sahar Ben Rached, Salem Al Haddad, Sarthak Prasad Malla. Mentors: Akash Kant, Shantanu Jha.",
     author_email="shantanu.rajesh.jha@gmail.com",
     license="MIT",
