@@ -52,7 +52,7 @@ setup(
     description="Quantum Energy Management",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/qcenergy/qudra",
+    url="https://qcenergy.github.io/qudra/",
     author="Asil Qraini, Fouad Afiouni, Gargi Chandrakar, Nurgazy Seidaliev, Sahar Ben Rached, Salem Al Haddad, Sarthak Prasad Malla. Mentors: Akash Kant, Shantanu Jha.",
     author_email="shantanu.rajesh.jha@gmail.com",
     license="MIT",
@@ -73,9 +73,9 @@ setup(
     keywords="qubo energy vqe quantum computing",
     python_requires=">=3.7",
     project_urls={
-        "Documentation": "https://github.com/Q-Energy-2022/NYUAD-2022",
-        "Source Code": "https://github.com/Q-Energy-2022/NYUAD-2022",
-        "Tutorials": "https://github.com/Q-Energy-2022/NYUAD-2022/tree/main/tutorials",
+        "Documentation": "https://github.com/qcenergy/qudra",
+        "Source Code": "https://github.com/qcenergy/qudra",
+        "Tutorials": "https://github.com/qcenergy/qudra/tree/main/tutorials",
     },
     include_package_data=True,
 )
