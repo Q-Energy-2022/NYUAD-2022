@@ -30,7 +30,7 @@ EXTRA_REQUIREMENTS = {
         "mkdocs-gen-files",
         "mkdocs-literate-nav",
         "mkdocs-section-index",
-        "mkdocstrings",
+        "mkdocstrings-python",
     ],
 }
 
